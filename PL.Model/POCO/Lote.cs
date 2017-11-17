@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PL.DAO
+namespace PL.Model.POCO
 {
-    interface ILance
+    public class Lote
     {
+        public int LoteId { get; set; }
     }
 }

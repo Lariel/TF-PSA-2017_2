@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PL.DAO
+namespace PL.Model.POCO
 {
-    interface ILeilao
+    public class Lance
     {
+        public int LanceId { get; set; }
     }
 }

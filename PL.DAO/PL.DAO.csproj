@@ -40,12 +40,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IBem.cs" />
-    <Compile Include="ILance.cs" />
-    <Compile Include="ILeilao.cs" />
-    <Compile Include="ILote.cs" />
-    <Compile Include="IUsuario.cs" />
+    <Compile Include="DAO\BemDAO.cs" />
+    <Compile Include="Interface\IBemDAO.cs" />
+    <Compile Include="Interface\ILanceDAO.cs" />
+    <Compile Include="Interface\ILeilaoDAO.cs" />
+    <Compile Include="Interface\ILoteDAO.cs" />
+    <Compile Include="Interface\IUsuarioDAO.cs" />
+    <Compile Include="DAO\LanceDAO.cs" />
+    <Compile Include="DAO\LeilaoDAO.cs" />
+    <Compile Include="DAO\LoteDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DAO\UsuarioDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PL.Model\PL.Model.csproj">
+      <Project>{f1a581af-368c-460d-a348-eda00d6fe518}</Project>
+      <Name>PL.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

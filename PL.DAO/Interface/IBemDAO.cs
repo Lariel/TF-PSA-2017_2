@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PL.Model.POCO;
 
-namespace PL.Model
+
+namespace PL.DAO
 {
-    public class Class1
+    interface IBemDAO
     {
+        IEnumerable<Bem> getBens();
+
+
     }
 }
