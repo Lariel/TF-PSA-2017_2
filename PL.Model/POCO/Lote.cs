@@ -9,5 +9,6 @@ namespace PL.Model.POCO
     public class Lote
     {
         public int LoteId { get; set; }
+        
     }
 }
