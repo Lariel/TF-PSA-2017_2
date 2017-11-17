@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace PL.DAO
 {
-    public class Class1
+    interface IBem : IDisposable
     {
+        
+
     }
 }
