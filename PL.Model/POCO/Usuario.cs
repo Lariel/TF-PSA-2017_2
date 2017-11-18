@@ -9,8 +9,8 @@ namespace PL.Model.POCO
     public class Usuario
     {
         public int UsuarioId { get; set; } //CPF ou CNPJ
-        public String nome { get; set; }
-        public String email { get; set; }
-        public String senha { get; set; }
+        public String Nome { get; set; }
+        public String Email { get; set; }
+        public String Senha { get; set; }
     }
 }

@@ -9,6 +9,6 @@ namespace PL.Model.POCO
     public class Lote
     {
         public int LoteId { get; set; }
-        
+        public virtual ICollection<Bem> Bens { get; set; }
     }
 }
