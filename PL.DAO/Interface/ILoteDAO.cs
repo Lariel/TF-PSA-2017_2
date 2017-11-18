@@ -10,5 +10,8 @@ namespace PL.DAO
     interface ILoteDAO
     {
         IEnumerable<Lote> getLotes();
+        Lote GetLoteById(int id);
+        Boolean Add(Lote l);
+        void Delete(int id);
     }
 }

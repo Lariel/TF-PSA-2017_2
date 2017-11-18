@@ -10,5 +10,8 @@ namespace PL.DAO
     interface IUsuarioDAO
     {
         IEnumerable<Usuario> getUsuarios();
+        Usuario GetUsuarioById(int id);
+        Boolean Add(Usuario u);
+        void Delete(int id);
     }
 }

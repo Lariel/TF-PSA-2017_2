@@ -9,6 +9,21 @@ namespace PL.DAO
 {
     class LanceDAO : ILanceDAO
     {
+        public bool Add(Lance l)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Lance GetLanceById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Lance> getLances()
         {
             throw new NotImplementedException();

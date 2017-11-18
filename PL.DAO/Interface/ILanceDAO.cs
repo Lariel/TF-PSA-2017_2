@@ -10,5 +10,8 @@ namespace PL.DAO
     interface ILanceDAO
     {
         IEnumerable<Lance> getLances();
+        Lance GetLanceById(int id);
+        Boolean Add(Lance l);
+        void Delete(int id);
     }
 }

@@ -11,7 +11,8 @@ namespace PL.DAO
     interface IBemDAO
     {
         IEnumerable<Bem> getBens();
-
-
+        Bem GetBemById(int id);
+        Boolean Add(Bem b);
+        void Delete(int id);
     }
 }

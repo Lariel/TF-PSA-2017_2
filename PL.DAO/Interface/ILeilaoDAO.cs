@@ -10,5 +10,8 @@ namespace PL.DAO
     interface ILeilaoDAO
     {
         IEnumerable<Leilao> getLeiloes();
+        Leilao GetLeilaoById(int id);
+        Boolean Add(Leilao l);
+        void Delete(int id);
     }
 }
