@@ -1,0 +1,63 @@
+﻿@model IEnumerable<PL.Model.POCO.Leilao>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Natureza)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Privacidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MomentoInicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MomentoFim)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdUsuarioResponsavel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LanceLimite)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Natureza)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Privacidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MomentoInicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MomentoFim)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdUsuarioResponsavel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LanceLimite)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LeilaoId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LeilaoId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LeilaoId })
+        </td>
+    </tr>
+}
+
+</table>

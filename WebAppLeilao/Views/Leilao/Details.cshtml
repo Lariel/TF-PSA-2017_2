@@ -1,0 +1,66 @@
+﻿@model PL.Model.POCO.Leilao
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Leilao</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Natureza)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Natureza)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Privacidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Privacidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MomentoInicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MomentoInicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MomentoFim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MomentoFim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdUsuarioResponsavel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdUsuarioResponsavel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LanceLimite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LanceLimite)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LeilaoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
