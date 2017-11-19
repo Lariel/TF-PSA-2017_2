@@ -1,18 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F1A581AF-368C-460D-A348-EDA00D6FE518}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PL.Model</RootNamespace>
-    <AssemblyName>PL.Model</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <ProjectGuid>{5839F2B2-B534-4467-BCB7-BA3CFE62EC3A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AppLeilao</RootNamespace>
+    <AssemblyName>AppLeilao</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -47,27 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAO\BemDAO.cs" />
-    <Compile Include="DAO\LanceDAO.cs" />
-    <Compile Include="DAO\LeilaoDAO.cs" />
-    <Compile Include="DAO\LoteDAO.cs" />
-    <Compile Include="DAO\UsuarioDAO.cs" />
-    <Compile Include="Interface\IBemDAO.cs" />
-    <Compile Include="Interface\ILanceDAO.cs" />
-    <Compile Include="Interface\ILeilaoDAO.cs" />
-    <Compile Include="Interface\ILoteDAO.cs" />
-    <Compile Include="Interface\IUsuarioDAO.cs" />
-    <Compile Include="LeilaoContext.cs" />
-    <Compile Include="Migrations\201711190314104_Criacao.cs" />
-    <Compile Include="Migrations\201711190314104_Criacao.Designer.cs">
-      <DependentUpon>201711190314104_Criacao.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="POCO\Bem.cs" />
-    <Compile Include="POCO\Lance.cs" />
-    <Compile Include="POCO\Leilao.cs" />
-    <Compile Include="POCO\Lote.cs" />
-    <Compile Include="POCO\Usuario.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -75,16 +57,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201711190314104_Criacao.resx">
-      <DependentUpon>201711190314104_Criacao.cs</DependentUpon>
-    </EmbeddedResource>
+    <ProjectReference Include="..\PL.Model\PL.Model.csproj">
+      <Project>{f1a581af-368c-460d-a348-eda00d6fe518}</Project>
+      <Name>PL.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>
