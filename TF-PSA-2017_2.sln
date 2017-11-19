@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PL.Model", "PL.Model\PL.Mod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLeilao", "AppLeilao\AppLeilao.csproj", "{5839F2B2-B534-4467-BCB7-BA3CFE62EC3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppLeilao", "WebAppLeilao\WebAppLeilao.csproj", "{432FFBC5-DDD3-4DA6-A833-E7074AE64106}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5839F2B2-B534-4467-BCB7-BA3CFE62EC3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5839F2B2-B534-4467-BCB7-BA3CFE62EC3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5839F2B2-B534-4467-BCB7-BA3CFE62EC3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{432FFBC5-DDD3-4DA6-A833-E7074AE64106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{432FFBC5-DDD3-4DA6-A833-E7074AE64106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{432FFBC5-DDD3-4DA6-A833-E7074AE64106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{432FFBC5-DDD3-4DA6-A833-E7074AE64106}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
