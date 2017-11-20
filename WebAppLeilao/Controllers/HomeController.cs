@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PL.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,8 @@ namespace WebAppLeilao.Controllers
 {
     public class HomeController : Controller
     {
+        private LeilaoContext db = new LeilaoContext();
+
         public void Agente()
         {
             Response.Write("<h3>Hello MVC!</h3>");
@@ -42,6 +45,11 @@ namespace WebAppLeilao.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public ActionResult Consulta()
+        {
+            return View(db.Leiloes.Count());
         }
     }
 }
