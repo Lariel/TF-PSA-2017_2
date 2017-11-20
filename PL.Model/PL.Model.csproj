@@ -58,11 +58,6 @@
     <Compile Include="Interface\ILoteDAO.cs" />
     <Compile Include="Interface\IUsuarioDAO.cs" />
     <Compile Include="LeilaoContext.cs" />
-    <Compile Include="Migrations\201711190314104_Criacao.cs" />
-    <Compile Include="Migrations\201711190314104_Criacao.Designer.cs">
-      <DependentUpon>201711190314104_Criacao.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="POCO\Bem.cs" />
     <Compile Include="POCO\Lance.cs" />
     <Compile Include="POCO\Leilao.cs" />
@@ -73,11 +68,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201711190314104_Criacao.resx">
-      <DependentUpon>201711190314104_Criacao.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
