@@ -13,7 +13,8 @@ namespace PL.Model.POCO
         public String Privacidade { get; set; } //Lances abertos ou fechados
         public DateTime MomentoInicio { get; set; }
         public DateTime MomentoFim { get; set; }
-        public int IdUsuarioResponsavel { get; set; }
         public double LanceLimite { get; set; }
+        public int IdUsuarioResponsavel { get; set; }
+        public int IdLote { get; set; }
     }
 }

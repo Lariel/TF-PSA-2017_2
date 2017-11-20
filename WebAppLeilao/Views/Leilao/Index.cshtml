@@ -32,32 +32,6 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Natureza)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Privacidade)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MomentoInicio)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MomentoFim)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.IdUsuarioResponsavel)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LanceLimite)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.LeilaoId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.LeilaoId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.LeilaoId })
-        </td>
-    </tr>
-}
+
 
 </table>
